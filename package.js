@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'kadira:dochead',
+  name: 'bensventures:dochead',
   summary: 'Isomorphic way to manipulate document.head for Meteor apps',
-  version: '1.5.0',
-  git: 'https://github.com/kadirahq/meteor-dochead.git'
+  version: '1.5.1',
+  git: 'https://github.com/bensventures/meteor-dochead.git'
 });
 
 Npm.depends({
@@ -11,8 +11,8 @@ Npm.depends({
 
 var configure = function(api) {
   api.versionsFrom('1.3');
-  api.use(['es5-shim', 'ecmascript', 'tracker']);
-  api.use('kadira:flow-router-ssr@3.12.1', ['client', 'server'], {weak: true});
+  api.use(['ecmascript', 'tracker']);
+  api.use('bensventures:flow-router-ssr@3.13.1', ['client', 'server'], {weak: true});
 
   api.addFiles('main.js', 'client');
   api.addFiles('lib/both.js', ['client', 'server']);
